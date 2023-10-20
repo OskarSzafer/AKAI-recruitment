@@ -40,9 +40,6 @@ for sentence in sentences:
             encountered.append(word)
             number.append(1)
 
-for i in range(len(encountered)):
-    print(encountered[i], number[i])
-
 for i in range(1, 4):
     print(f"{i}. \"{encountered[number.index(max(number))]}\" - {max(number)}")
     number[number.index(max(number))] = 0
